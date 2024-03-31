@@ -1909,7 +1909,6 @@ pre code {
   width: 100%;
   height: calc(1.5em + 0.75rem + 4px);
   padding: 0.375rem 0.75rem;
-  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
@@ -9484,6 +9483,9 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /********** Template CSS ************/
+.font-third {
+  font-family: 'Italianno',cursive
+}
 .font-secondary {
   font-family: 'Great Vibes', cursive;
 }
@@ -9583,7 +9585,7 @@ a.text-dark:hover, a.text-dark:focus {
   height: 2px;
   bottom: 11px;
   left: calc(50% - 80px);
-  background: #E47A2E;
+  background: white;
 }
 
 .section-title::after {
@@ -9593,7 +9595,7 @@ a.text-dark:hover, a.text-dark:focus {
   height: 2px;
   bottom: 11px;
   right: calc(50% - 80px);
-  background: #E47A2E;
+  background: white;
 }
 
 .btn-play {
@@ -9702,7 +9704,8 @@ a.text-dark:hover, a.text-dark:focus {
     bottom: 0;
     left: 50%;
     margin-left: -1px;
-    background: #E47A2E;
+    background: white;
+    opacity: 0.2;
   }
   .timeline .row::before {
     content: "";
@@ -9791,3 +9794,18 @@ a.text-dark:hover, a.text-dark:focus {
     border-right: none !important;
   }
 }
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+.heart {
+  fill: red;
+  position: relative;
+  top: 5px;
+  width: 50px;
+  animation: pulse 1s ease infinite;
+}
+
+

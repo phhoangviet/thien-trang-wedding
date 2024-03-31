@@ -12,14 +12,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Maitree&family=Italianno&family=Great+Vibes&family=Montserrat:wght@400;600&display=swap"
           rel="stylesheet"
         />
         <link
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
           rel="stylesheet"
         />
-       
       </head>
 
       <body
