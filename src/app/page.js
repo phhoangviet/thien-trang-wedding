@@ -124,7 +124,7 @@ export default async function Home() {
           </div>
           <div className="container">
             <div className="">
-              <div className="text-center">
+              <div className="text-center max-w-[600px] m-auto">
                 <FormSubmit />
               </div>
             </div>
