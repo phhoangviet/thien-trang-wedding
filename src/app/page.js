@@ -4,27 +4,30 @@ import GalleryImage from "./gallery";
 export default async function Home() {
   return (
     <div
-      className="w-screen min-w-screen min-h-screen bg-[url('/background_main.jpg')] bg-scroll md:bg-cover "
+      className="w-screen min-w-screen min-h-screen bg-[url('/background_main.jpg')] bg-contain bg-scroll md:bg-cover "
       style={{
-        backgroundSize: "100%",
+        backgroundSize: "100vw",
       }}
     >
       <header className="fixed top-0 z-30  bg-black w-full bg-opacity-20">
         <nav className="flex flex-col justify-center items-center mx-auto px-6 py-3 md:w-[1200px]">
           <div className="flex justify-between items-center">
             <h1 className="font-secondary mb-n2 text-white">
-              Thien <span className="text-white">&</span> Trang
+              Thiện <span className="text-white">&</span> Trang
             </h1>
           </div>
           <div className="mt-2" style={{ fontFamily: "Maitree" }}>
             <div className="flex space-x-8">
-              <a href="#our-wedding" className="text-white">
+              <a href="#our-wedding" className="text-white text-sm md:text-xl">
                 Our Wedding
               </a>
-              <a href="#our-album" className="text-white">
+              <a href="#our-album" className="text-white text-sm md:text-xl">
                 Our Album
               </a>
-              <a href="#rsvp" className="text-white scroll-smooth">
+              <a
+                href="#rsvp"
+                className="text-white scroll-smooth text-sm md:text-xl"
+              >
                 Send your love
               </a>
             </div>
@@ -96,7 +99,7 @@ export default async function Home() {
       >
         <div className="d-inline-block border-top border-bottom border-light py-3 px-2">
           <h3
-            className="text-uppercase font-weight-normal text-white m-0  md:text-xl text-xs"
+            className="text-uppercase  text-white m-0  md:text-xl text-[7px]"
             style={{ letterSpacing: "2px" }}
           >
             We're getting married
