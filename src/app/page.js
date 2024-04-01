@@ -1,14 +1,19 @@
 import FormSubmit from "./formt";
 import GalleryImage from "./gallery";
-
+import Image from "next/image";
 export default async function Home() {
   return (
     <div
-      className="w-screen min-w-screen min-h-screen bg-[url('/background_main.jpg')] bg-contain bg-scroll md:bg-cover "
-      style={{
-        backgroundSize: "100vw",
-      }}
+      className="w-screen min-w-screen min-h-screen bg-opacity-70"
+      style={{ backgroundColor: "#e5d9ce" }}
     >
+      <Image
+        src="/background_main.jpg"
+        width={1200}
+        height={800}
+        className="w-full"
+      />
+
       <header className="fixed top-0 z-30  bg-black w-full bg-opacity-20">
         <nav className="flex flex-col justify-center items-center mx-auto px-6 py-3 md:w-[1200px]">
           <div className="flex justify-between items-center">
@@ -34,8 +39,10 @@ export default async function Home() {
           </div>
         </nav>
       </header>
-      <div className="min-h-screen"></div>
-      <div id="our-wedding" className="min-h-screen ">
+      <div
+        id="our-wedding"
+        className="min-h-screen md:bg-[url('/main_2.jpg')] bg-[url('/main_3.jpg')] bg-cover bg-scroll md:bg-cover"
+      >
         <div
           className="text-white  py-5 mt-4"
           style={{ fontFamily: "Maitree" }}

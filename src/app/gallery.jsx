@@ -48,8 +48,8 @@ export default function GalleryImage() {
     >
       {listImage.map((el,idx) => {
         return (
-          <SwiperSlide key={idx}>
-            <Image quality={50} src={el} width={1200} height={400} alt="text" style={{width:'100%',height:'100%'}}/>
+          <SwiperSlide key={idx} >
+            <Image quality={50} src={el} width={1200} height={400} alt="text" style={{width:'100%',height:'100%'}} />
 
           </SwiperSlide>
         );
