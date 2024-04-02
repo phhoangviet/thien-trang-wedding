@@ -9810,3 +9810,29 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000000e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.modal {
+  /* width: clamp(50%, 1200px, 90%); */
+  /* height: min(50%, 400px); */
+
+  margin: auto;
+  padding: 0 2rem;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

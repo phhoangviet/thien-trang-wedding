@@ -1,16 +1,20 @@
+import { EnvelopComp } from "./envelop";
 import FormSubmit from "./formt";
 import GalleryImage from "./gallery";
 import Image from "next/image";
+
 export default async function Home() {
   return (
     <div
       className="w-screen min-w-screen min-h-screen bg-opacity-70"
       style={{ backgroundColor: "#e5d9ce" }}
     >
+      <EnvelopComp />
       <Image
         src="/background_main.jpg"
         width={1200}
         height={800}
+        alt="main"
         className="w-full"
       />
 
