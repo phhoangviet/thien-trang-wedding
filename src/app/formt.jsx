@@ -13,7 +13,7 @@ export default function FormSubmit() {
       alert("Anh/chị vui lòng xác nhận sẽ tham dự buổi tiệc chứ?")
       return
     }
-    if (data?.attending == "0") {
+    if (data?.email == "1" && data?.attending == "0") {
       alert("Anh/chị vui lòng chọn số người tham dự")
       return
     }
@@ -70,7 +70,7 @@ export default function FormSubmit() {
       <div className="form-row">
         <div className="form-group col-sm-6">
           <select
-          {...register("attending",{required:true})}
+          {...register("attending",{required:false})}
           
             name="attending"
             className="form-control bg-secondary border-0"
