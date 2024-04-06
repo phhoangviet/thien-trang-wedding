@@ -44,13 +44,13 @@ export const TableList = ({ data }) => {
           return (
             <tr
               key={idx}
-              className="border-collapse border border-slate-500 p-4 text-sm"
+              className="border-collapse border border-slate-500 p-6 text-sm"
             >
-              <td className="p-2">{idx + 1}</td>
-              <td>{el?.name || ""}</td>
-              <td>{el?.message || ""}</td>
-              <td>{el?.email === "1" ? "Có" : "Không"}</td>
-              <td>{el?.num_join || 0}</td>
+              <td className="p-3">{idx + 1}</td>
+              <td className="w-[200px]">{el?.name || ""}</td>
+              <td className=" p-2">{el?.message || ""}</td>
+              <td className="w-[80px]">{el?.email === "1" ? "Có" : "Không"}</td>
+              <td className="">{el?.num_join || 0}</td>
               <td>{el?.is_vegetarian === true ? "Có" : "Không"}</td>
               <td>{moment(el?.created_at).format("hh:mm DD/MM/YYYY")}</td>
             </tr>

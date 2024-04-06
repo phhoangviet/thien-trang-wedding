@@ -2,15 +2,15 @@ import { createClient } from "../../../supabase/client";
 import { TableList } from "./table";
 export default async function List() {
   const server = createClient();
-  const res = await server.from("rsvp").select("*", { count: "exact" });
+  const res = await server.from("rsvp").select("*", { count: "estimated" });
   const resIsVegetarian = await server
     .from("rsvp")
-    .select("name", { count: "exact" })
+    .select("name", { count: "estimated" })
     .eq("is_vegetarian", true);
 
   const resIsJoin = await server
     .from("rsvp")
-    .select("name", { count: "exact" })
+    .select("name", { count: "estimated" })
     .eq("email", "1");
   const totalJoined = res.data.reduce((acc, curr) => acc + curr.num_join, 0);
   return (
