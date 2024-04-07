@@ -63,7 +63,7 @@ export default function FormSubmit() {
           >
             <option value="3">Hi vọng anh/chị sẽ đến chung vui cùng chúng em</option>
             <option value="0">Anh/chị bận việc. Sẽ không tham gia được</option>
-            <option value="1">Chắn chắn rồi</option>
+            <option value="1">Chắn chắn</option>
           </select>
         </div>
       </div>
@@ -97,7 +97,7 @@ export default function FormSubmit() {
             className="form-control bg-secondary border-0"
             style={{ height: "52px" }}
           >
-            <option value="0">Bạn có yêu cầu món chay không</option>
+            <option value="0">Anh/Chị có yêu cầu món chay không</option>
             <option value="0">Không</option>
             <option value="1">Có</option>
           </select>
